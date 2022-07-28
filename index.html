@@ -49,7 +49,7 @@
             </div>
         </nav>
 
-        <section class="mt-3">
+        <section class=" container mt-3">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -108,15 +108,19 @@
     <!-- main sectio starts -->
     <main class="container">
         <!-- courses section starts -->
-        <section class="mt-5">
+        <section class="mt-5 pt-5">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <h2>Discover Our Popular Courses</h2>
-                <p class="text-center">Learning from industry experts and leaders in respective fields can boost your
-                    chances of getting a new job ar getting promoted.</p>
+                <div class="d-flex align-items-center justify-content-center">
+                    <p class="text-center">Learning from industry experts and leaders in respective fields can boost
+                        <br> your chances of getting a new job or getting promoted.
+                    </p>
+                </div>
+
             </div>
 
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-2 p-2">
+            <div class="container mt-3">
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 p-2 g-4">
 
                     <div class="col">
                         <div class="card">
@@ -225,45 +229,159 @@
         <!-- courses section ends -->
 
         <!-- ready to join section starts -->
-        <section class="container mt-3">
+        <section class="container mt-5" id="register">
             <div class="container bg-primary p-5 rounded">
                 <div class="row">
-                    <div class="col-sm">
-                        <h2>Ready to join?</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque maxime ea odit minima
-                            fugiat facere. Officiis ea expedita deleniti, nisi corporis assumenda esse non dolor debitis
-                            aliquid ab eum fugiat?</p>
-                    </div>
-                    <div class="col-sm">
-                        <!-- <div>
-                            <div class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
-                                Register Now
-                            </div>
-                        </div> -->
-
-                        <!-- Button trigger modal -->
+                    <div class="text-center col-12 col-md-6">
                         <div>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                Launch demo modal
+                            <h2 class="text-white">Ready to join?</h2>
+                            <p class="text-white">Register today adn get access to our premium courses. Our courses are
+                                designed carefully to meet the specific learnig demands of beginner to advance students
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 pt-5">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary text-dark" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                <div class="btn btn-light">Register now</div>
                             </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Sign Up</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="mb-0 mt-2">Email</p>
+                                            <input type="email" class="form-control" id="modal-email"
+                                                placeholder="e.g. haapy-develper@gmail.com">
+                                            <p class="mb-0 mt-2">Password</p>
+                                            <input type="password" class="form-control"
+                                                placeholder="make a strong password">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save and Register</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
-            
-        
+
+
 
         </section>
+        <!-- ready to join seciton ends -->
+
+        <!-- frequently asked section starts -->
+        <section class="container mt-5 pt-5">
+            <div class="d-flex align-items-center justify-content-center">
+                <div>
+                    <h2>
+                        Frequently Asked Questions
+                    </h2>
+                    <p>Have any question? Check the bellow answers to the frequently asked questions.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What's the difference between flexbox and grid?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables.
+                                It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h5 class="fw-bold">What's the difference between bootstrap and tailwind?</h5>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These
+                                classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables.
+                                It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables.
+                                It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
 
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous">
-    </script>
 </body>
 
 </html>
