@@ -13,9 +13,9 @@
 <body>
     <!-- header starts here -->
     <header class="container">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg bg-light" style="background-color:#d3dded !important;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Edupia</a>
+                <a class="navbar-brand" style="font-weight:bold; font-style:italic" href="#">EduPia <i class="fa-solid fa-graduation-cap"></i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -27,10 +27,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Courses</a>
+                            <a class="nav-link" href="#all-course">Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#all-course">Pricing</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Resources</a>
@@ -42,7 +42,7 @@
                             <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Register</a>
+                            <a class="nav-link" href="#register">Register</a>
                         </li>
 
                     </ul>
@@ -63,12 +63,12 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active ">
                         <img src="images/cover/cover-3.jpg" class="rounded d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption d-md-block">
+                        <div class="carousel-caption d-block ">
                             <div class="d-flex flex-column align-items-center justify-content-center text-center">
                                 <h1>Learn form industry experts </h1>
                                 <p>Learn with flexibility
                                 </p>
-                                <button type="button" class="btn btn-primary px-4 py-2">Explore</button>
+                                <button type="button" class="btn btn-primary px-4 py-2 m0">Explore</button>
                             </div>
 
                         </div>
@@ -109,7 +109,7 @@
     <!-- main sectio starts -->
     <main class="container">
         <!-- courses section starts -->
-        <section class="mt-5 pt-5">
+        <section class="mt-5 pt-5" id="all-course">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <h2>Discover Our Popular Courses</h2>
                 <div class="d-flex align-items-center justify-content-center">
@@ -238,7 +238,7 @@
                     </div>
                     <div class="col-12 col-md-6 text-center p-5 mt-5">
                         <h2 class="fw-bold">Explore the Resources Center</h2>
-                        
+
                         <p class="text-secondary">
                             The idea behind the creation of EduPia is that every person should have access to a
                             top-notch education. We made a great compilation of free college courses from the best
@@ -255,7 +255,7 @@
                             </div>
 
                             <div class="pe-3">
-                                <h2 >
+                                <h2>
                                     500+
                                 </h2>
                                 <h5>Expert Tutors</h5>
@@ -334,7 +334,7 @@
         <section class="container mt-5 pt-5">
             <div class="d-flex align-items-center justify-content-center">
                 <div>
-                    <h2>
+                    <h2 class="text-center fw-bold">
                         Frequently Asked Questions
                     </h2>
                     <p>Have any question? Check the bellow answers to the frequently asked questions.
@@ -353,14 +353,9 @@
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
-                                the
-                                collapse plugin adds the appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables.
-                                It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was
+                                designed for layout in one dimension - either a row or a column. Grid was designed for
+                                two-dimensional layout - rows, and columns at the same time.
                             </div>
                         </div>
                     </div>
@@ -374,15 +369,9 @@
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                until
-                                the collapse plugin adds the appropriate classes that we use to style each element.
-                                These
-                                classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables.
-                                It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                The maim differecne is that Tailwind offers predesigned widgets to build a site from
+                                scratch with fast UI development. Bootstrap comes with a set of pre-styled responsive,
+                                mobile-first components that possess a definite UI kit.
                             </div>
                         </div>
                     </div>
@@ -396,14 +385,10 @@
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
-                                the
-                                collapse plugin adds the appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables.
-                                It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                A CSS box model is a compartment that includes numerous assets, such as edge, border,
+                                padding and material. It is used to develop the design and structure of a web page. t
+                                can be used as a set of tools to personalize the layout of different components.
+                                According to the CSS box model, the web browser supplies each element as a square prism.
                             </div>
                         </div>
                     </div>
@@ -418,14 +403,10 @@
                         <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
-                                the
-                                collapse plugin adds the appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables.
-                                It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                Semantic elements have meaningful names which tells about type of content. For example
+                                header, footer, table, … etc.HTML5 introduces many semantic elements as mentioned below
+                                which make the code easier to write and understand for the developer as well as
+                                instructs the browser on how to treat them.
                             </div>
                         </div>
                     </div>
